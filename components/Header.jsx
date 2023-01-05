@@ -1,10 +1,10 @@
 import Link from "next/link"
-import AnimatedScroll from "./AnimatedScroll"
+import styled from "../styles/header.module.css"
 
 export default function Header(){
   return(
-    <div className="bg-slate-50">
-      <div className="relative h-20 w-auto bg-slate-200">
+    <div>
+      <div className={styled.container}>
         {/*Logo*/}
         <div className="absolute right-0 bottom-1">
           <Link href="#" className="mr-5">Inicio</Link>
@@ -12,7 +12,6 @@ export default function Header(){
           <Link href="#" className="mr-5">Footer</Link>
         </div>
       </div>
-      <AnimatedScroll />
     </div>
   )
 }

@@ -1,0 +1,76 @@
+.container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 200px;
+  width: 100vw;
+}
+
+.card{
+  position: relative;
+  width: 320px;
+  height: 450px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.card .poster{
+  position: relative;
+  overflow: hidden;
+}
+
+.card .poster::before{
+  z-index: 1;
+  content: "";
+  position: absolute;
+  bottom: -180px;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, #6ba1ff 50%, transparent);
+  transition: 0.5s;
+}
+
+.card:hover .poster::before{
+  bottom: 0px;
+}
+
+.card .poster img{
+  width: 100%;
+  transition: 0.5s;
+}
+
+.card:hover .poster img{
+  transform: translateY(-50px);
+  filter: blur(2px);
+}
+
+.card .details{
+  z-index: 2;
+  position: absolute;
+  min-height: 235px;
+  width: 100%;
+  bottom: -160px;
+  left: 5px;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.card:hover .details{
+  margin-bottom: 150px;
+}
+
+.card .details h1{
+  font-size: 2rem;
+  max-width: 180px;
+  margin-bottom: 10px;
+}
+
+.card .details h3{
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.card .details h5{
+  font-size: 1rem;
+}
