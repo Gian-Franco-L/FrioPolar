@@ -1,0 +1,8 @@
+.tittle{
+  font-size: 4.5rem;
+  font-weight: bold;
+  background: url(../img/hielo13.jpg);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}

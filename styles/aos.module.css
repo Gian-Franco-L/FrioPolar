@@ -4,7 +4,6 @@
 	justify-content: center;
 	min-height: 70vh;
 	font-size: 36px;
-	text-transform: uppercase;
 }
 
 .container {
@@ -18,9 +17,9 @@
 
 .container::after {
 	content: "";
-	width: 2px;
+	width: 4px;
 	height: 100%;
-	background: #1b3231;
+	background: url(../img/hielo13.jpg);
 	position: absolute;
 	top: 0;
 	left: calc(50% - 1px);
@@ -30,6 +29,7 @@
 .evento {
 	display: flex;
 	justify-content: space-between;
+	margin-top: 200px;
 	margin-bottom: 200px;
 	position: relative;
 }
@@ -37,38 +37,44 @@
 .evento::after {
 	content: "";
 	display: block;
-	width: 14px;
-	height: 14px;
+	width: 22px;
+	height: 22px;
 	border-radius: 100px;
-	background: #DCDFD9;
-	border: 2px solid #1b3231;
+	background: url(../img/hielo13.jpg);
+	border: 2px solid white;
 	position: absolute;
 	z-index: 2;
 	top: calc(50% - 9px);
-	left: calc(50% - 7px);
+	left: calc(50% - 10px);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 .fecha {
 	display: flex;
 	align-items: center;
-	justify-content: start;
+	justify-content: flex-start;
 	width: calc(42% + 20px);
 	font-size: 25px;
-	font-weight: normal;
+	font-weight: bold;
+	background: url(../img/hielo13.jpg);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .foto {
 	width: 42%;
-	border: 10px solid #fff;
 	position: relative;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .foto::after {
 	content: "";
 	display: block;
 	border: 20px solid transparent;
-	border-left: 20px solid #fff;
+	border-left: 20px solid rgb(0, 60, 190);
 	position: absolute;
 	right: -50px;
 	top: calc(50% - 20px);
@@ -90,7 +96,7 @@
 .evento:nth-child(even) .foto::after {
 	content: "";
 	border: 20px solid transparent;
-	border-right: 20px solid #fff;
+	border-right: 20px solid rgb(53, 87, 255);
 	right: initial;
 	left: -50px;
 }
