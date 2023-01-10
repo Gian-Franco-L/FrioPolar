@@ -1,15 +1,23 @@
 import Link from "next/link"
 import styled from "../styles/header.module.css"
+import { FiShoppingCart } from 'react-icons/fi';
 
-export default function Header(){
+export default function Header(props){
   return(
     <div>
       <div className={styled.container}>
         {/*Logo*/}
-        <div className="absolute right-0 bottom-1 pr-20">
-          <Link href="#" className="mr-10">Inicio</Link>
-          <Link href="#" className="mr-10">Mercado</Link>
-          <Link href="#" className="mr-10">Footer</Link>
+        {props.home && 
+        <div className={styled.linksContainer}>
+          <Link href="#" className={styled.link}><p>Inicio</p></Link>
+          <Link href="#" className={styled.link}><p>Mercado</p></Link>
+          <Link href="#" className={styled.link}><p>Footer</p></Link>
+        </div>
+        }
+        <div className={styled.cartContainer}>
+          <button className={styled.cartButton}>
+            <FiShoppingCart className={styled.cart}/>
+          </button>
         </div>
       </div>
     </div>

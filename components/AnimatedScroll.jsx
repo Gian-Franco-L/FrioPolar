@@ -4,7 +4,6 @@ import secondImg from "../img/calleoscura.webp"
 import thirdImg from "../img/españa.webp"
 import fourthImg from "../img/hielo.webp"
 import fifthImg from "../img/jugo.webp"
-import sixthImg from "../img/6.jpg"
 import styled from "../styles/aos.module.css"
 import { useContext } from "react"
 

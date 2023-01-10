@@ -1,0 +1,48 @@
+.aboutContainer{
+  position: absolute;
+  top: 16%;
+  left: 10%;
+  height: 80%;
+  width: 80%;
+  background-color: #e2e8f0;
+  border-radius: 10px;
+}
+
+.linkBar{
+  position: absolute;
+  top: 13%;
+  left: 11%;
+}
+.backLink{
+  background: url(../img/hielo13.jpg);
+  font-weight: bold;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.mainImage{
+  position: absolute;
+  width: 340px;
+  top: 2.5%;
+  left: 5%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.firstImage{
+  width: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.secondImage{
+  width: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.thirdImage{
+  width: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+}

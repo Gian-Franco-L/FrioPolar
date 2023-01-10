@@ -1,10 +1,10 @@
 import { useState } from "react"
 
 const hookContext = () =>{
-  const [asd, setAsd] = useState("hola")
+  const [selectedImg, setSelectedImg] = useState("first")
   return{
-    asd,
-    setAsd
+    selectedImg,
+    setSelectedImg
   }
 }
 

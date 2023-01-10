@@ -1,14 +1,13 @@
 import { createContext, useContext } from "react";
-import { hookContext } from "../hooks/hookContext"
+import hookContext from "../hooks/hookContext"
 
 export const AppContext = createContext()
 
 export const useTask = () => useContext(AppContext)
 
 export const AppProvider = ({ children }) => {
-  const asd = "hola"
   return (
-    <AppContext.Provider value={{asd}}>
+    <AppContext.Provider value={hookContext()}>
       {children}
     </AppContext.Provider>
   );
