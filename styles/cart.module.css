@@ -1,38 +1,63 @@
 .cartContainer{
   z-index: 3;
   position: fixed;
-  height: 90%;
-  width: 400px;
-  top: 10.5%;
-  right: 0;
+  height: 87%;
+  width: 450px;
+  top: -80%;
+  right: 0.5%;
   background-size: cover;
-  background-color: rgba(0, 115, 255, .1);
+  background-color: rgba(152, 194, 253, 0.2);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.backgroundOpacity{
+  position: fixed;
+  height: 87%;
+  width: 450px;
+  top: -80%;
+  right: 0.5%;
+  backdrop-filter: blur(5px);
+  background: url(../img/hielo16.jpg);
+  -khtml-opacity:.50; 
+ -moz-opacity:.50; 
+ -ms-filter:"alpha(opacity=50)";
+  filter:alpha(opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+  opacity: .6;
+	background-size: cover;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 .cartBlur{
   position: fixed;
-  height: 90%;
-  width: 400px;
-  top: 10.5%;
-  right: 0;
-  backdrop-filter: blur(5px);
+  height: 87%;
+  width: 450px;
+  top: -80%;
+  right: 0.5%;
+  backdrop-filter: blur(2px);
+  background-color: rgba(66, 79, 123, 0.4);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 .cartBlur h1{
+  text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  margin-top: 2%;
-  margin-left: 5%;
-  background: url(../img/hielo13.jpg);
+  margin-top: 5%;
+  background: url(../img/hielo11.jpg);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .cartInfo{
   position: relative;
-  width: 20rem;
-  padding-left: 1.25rem;
-  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 5%;
+  font-size: 1.2rem;
   font-weight: bold;
-  background: url(../img/hielo13.jpg);
+  background: url(../img/hielo11.jpg);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }

@@ -1,0 +1,56 @@
+.container{
+  z-index: 4;
+  position: relative;
+  bottom: 0;
+  color: white;
+  height: 150px;
+  width: 99vw;
+  background: url(../img/hielo14.jpg);
+  background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0px 0.1px 1px 1.5px rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.adminSection{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 40%;
+  width: 17%;
+  bottom: 25%;
+  right: 2%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .3); 
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, .1);
+  backdrop-filter: blur(3px);
+}
+
+.input{
+  height: 50%;
+  width: 60%;
+  outline: none;
+  border-radius: 10px;
+  padding-left: 5%;
+  background: url(../img/hielo11.jpg);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 2px solid white;
+}
+.button{
+  height: 50%;
+  width: 30%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: url(../img/hielo4.jpg);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

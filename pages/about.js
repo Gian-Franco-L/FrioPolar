@@ -1,7 +1,8 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useRef } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import Header from "../components/Header"
+import CartComponent from "../components/CartComponent"
 import { useTask } from "../context/AppContext"
 import styled from "../styles/about.module.css"
 import harina from "../img/harina.jpeg"
@@ -29,9 +30,22 @@ export default function About(){
     }
   }, [selectedImg])
 
+  const container = useRef(null)
+  const background = useRef(null)
+  const blur = useRef(null)
+
   return(
     <div className="bg-slate-300 relative h-screen w-screen">
-      <Header />
+      <Header
+        container={container}
+        background={background}
+        blur={blur}
+      />
+      <CartComponent 
+          container={container}
+          background={background}
+          blur={blur}
+        />
       <div className={styled.linkBar}><Link href="http://localhost:3000/" className={styled.backLink}>Volver al inicio</Link> | Articulo &gt; eleccion</div>
       <div className={styled.aboutContainer}>
         <div className={styled.mainImage}>
