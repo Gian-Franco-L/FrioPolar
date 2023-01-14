@@ -44,7 +44,7 @@ export default function Header(props){
         {props.home && 
         <div className={styled.linksContainer}>
           <Link href="/" className={styled.link}><p>Inicio</p></Link>
-          <Link href="#products" className={styled.link}><p>Productos</p></Link>
+          <Link href="#products" className={styled.link}><p>Items</p></Link>
           <Link href="#" className={styled.link}><p>Footer</p></Link>
         </div>
         }

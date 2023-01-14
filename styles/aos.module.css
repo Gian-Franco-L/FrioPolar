@@ -73,7 +73,7 @@
 	display: block;
 	border: 20px solid transparent;
 	/* border-left: 20px solid rgb(0, 60, 190); */
-	border-left: 20px solid rgb(88, 163, 255);
+	border-left: 20px solid rgb(44, 71, 208);
 	position: absolute;
 	right: -50px;
 	top: calc(50% - 20px);
@@ -95,7 +95,7 @@
 .evento:nth-child(even) .foto::after {
 	content: "";
 	border: 20px solid transparent;
-	border-right: 20px solid rgb(53, 87, 255);
+	border-right: 20px solid rgb(44, 71, 208);
 	right: initial;
 	left: -50px;
 }

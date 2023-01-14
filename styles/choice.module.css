@@ -24,25 +24,29 @@
   z-index: 1;
   content: "";
   position: absolute;
-  bottom: -180px;
+  bottom: -400px;
   height: 100%;
   width: 100%;
-  background: linear-gradient(0deg, #002564 50%, transparent);
-  transition: 0.5s;
+  background: linear-gradient(to top, rgb(124, 176, 253), rgba(0,0,0,0)), url('../img/hielo10.jpg');
+  mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0,0,0,1)));
+  transition: 2s;
+  background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 .card:hover .poster::before{
-  bottom: 0px;
+  bottom: 100px;
 }
 
 .card .poster img{
   width: 100%;
   transition: 0.5s;
+  transform: translateY(-50px);
 }
 
 .card:hover .poster img{
-  transform: translateY(-50px);
-  filter: blur(2px);
+  filter: blur(3px);
 }
 
 .card .details{
@@ -53,7 +57,7 @@
   bottom: -160px;
   left: 5px;
   padding: 20px;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .card:hover .details{
@@ -65,7 +69,7 @@
   max-width: 180px;
   margin-bottom: 10px;
   font-weight: bold;
-  background: url(../img/hielo4.jpg);
+  background: url(../img/hielo8.jpg);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -74,7 +78,7 @@
   font-size: 1.5rem;
   margin-bottom: 5px;
   font-weight: bold;
-  background: url(../img/hielo11.jpg);
+  background: url(../img/hielo15.jpg);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -83,7 +87,7 @@
   font-size: 1rem;
   color: white;
   font-weight: bold;
-  background: url(../img/hielo11.jpg);
+  background: url(../img/hielo15.jpg);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
